@@ -62,3 +62,4 @@ document.querySelector('.again').addEventListener(`click`,function(){
     document.querySelector(`.number`).textContent='?';
     document.querySelector(`.score`).textContent=score;
     });
+    //
