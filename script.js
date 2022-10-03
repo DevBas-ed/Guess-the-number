@@ -52,3 +52,14 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
         document.querySelector(`.score`).textContent=0;
         changeBG(`red`);   }
 });
+//Again button:
+document.querySelector('.again').addEventListener(`click`,function(){
+    score=20;
+    number=Math.trunc((Math.random()*20)+1);
+    changeBG(`#222`);
+    displayMessage(`Start Guessing.....`);
+    document.querySelector(`.guess`).value=``;
+    document.querySelector(`.number`).textContent='?';
+    document.querySelector(`.score`).textContent=score;
+    });
+    //
