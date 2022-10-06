@@ -24,7 +24,7 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
         document.querySelector(`.number`).textContent=number;
 
 
-        displayMessage(`Correct Number!`);
+        displayMessage(`Correct Number!🎉`);
         changeBG(`#2BB403`);
         if(score>highscore){
             highscore=score;
@@ -34,21 +34,21 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
     //Guess is too low
     else if(score>1){
     if(guess<number){
-        displayMessage(`Number is lower`);
+        displayMessage(`Number is lower📉`);
         score--;
         document.querySelector(`.score`).textContent=score;
         changeBG(`#FF4D00`);
     }
     //Guess is too high
     else if(guess>number){
-        displayMessage(`Number is higher`);
+        displayMessage(`Number is higher📈`);
         score--;
         document.querySelector(`.score`).textContent=score;
         changeBG(`#FF4D00`);
     }}
     //Player lost 
     else{
-        displayMessage(`You lost`);
+        displayMessage(`You lost😭`);
         document.querySelector(`.score`).textContent=0;
         changeBG(`red`);   }
 });
@@ -57,7 +57,7 @@ document.querySelector('.again').addEventListener(`click`,function(){
     score=20;
     number=Math.trunc((Math.random()*20)+1);
     changeBG(`#222`);
-    displayMessage(`Start Guessing.....`);
+    displayMessage(`Start Guessing...`);
     document.querySelector(`.guess`).value=``;
     document.querySelector(`.number`).textContent='?';
     document.querySelector(`.score`).textContent=score;
