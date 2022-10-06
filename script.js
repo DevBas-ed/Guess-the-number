@@ -37,7 +37,7 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
         displayMessage(`Number is lower`);
         score--;
         document.querySelector(`.score`).textContent=score;
-        changeBG(`skyblue`);
+        changeBG(`#FF4D00`);
     }
     //Guess is too high
     else if(guess>number){
