@@ -25,7 +25,7 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
 
 
         displayMessage(`Correct Number!`);
-        changeBG(`#008080`);
+        changeBG(`#2BB403`);
         if(score>highscore){
             highscore=score;
         }
