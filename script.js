@@ -44,7 +44,7 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
         displayMessage(`Number is higher`);
         score--;
         document.querySelector(`.score`).textContent=score;
-        changeBG(`yellow`);
+        changeBG(`#FF4D00`);
     }}
     //Player lost 
     else{
