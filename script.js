@@ -1,6 +1,5 @@
 'use strict';
-'use strict';
-let number=Math.trunc((Math.random()*20)+1);
+let number=Math.floor((Math.random()*20)+1);
 let score=20;
 let highscore=0;
 
@@ -18,11 +17,8 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
         document.querySelector(`.message`).textContent=`No Number!`;
     }
     //Player wins
-    else if(guess===number){
-
-
+     if(guess===number){
         document.querySelector(`.number`).textContent=number;
-
 
         displayMessage(`Correct Number!🎉`);
         changeBG(`#2BB403`);
@@ -33,19 +29,18 @@ document.querySelector(`.check`).addEventListener(`click`, function(){
     }
     //Guess is too low
     else if(score>1){
-    if(guess<number){
-        displayMessage(`Number is lower📉`);
-        score--;
-        document.querySelector(`.score`).textContent=score;
-        changeBG(`#FF4D00`);
+    if(guess>number){
+        displayMessage(`Guess lower📉`);
+        changeBG(`#499fd6`);
     }
     //Guess is too high
-    else if(guess>number){
-        displayMessage(`Number is higher📈`);
-        score--;
-        document.querySelector(`.score`).textContent=score;
-        changeBG(`#FF4D00`);
-    }}
+    else if(guess<number){
+        displayMessage(`Guess higher📈`);
+        changeBG(`#ff793c`);
+    }
+         score--;
+         document.querySelector(`.score`).textContent=score;
+    }
     //Player lost 
     else{
         displayMessage(`You lost😭`);
@@ -61,5 +56,20 @@ document.querySelector('.again').addEventListener(`click`,function(){
     document.querySelector(`.guess`).value=``;
     document.querySelector(`.number`).textContent='?';
     document.querySelector(`.score`).textContent=score;
+    mouseOnlyNumberInputField.value = 1;
     });
     //
+
+const mouseOnlyNumberInputField = document.getElementById("mouse-only-number-input");
+
+window.onload = () => {
+    //add event listener to prevent the default behavior
+    mouseOnlyNumberInputField.addEventListener("keypress", (event) => {
+        event.preventDefault();
+    });
+}
+
+mouseOnlyNumberInputField.addEventListener('select', function() {
+    //add event listener to prevent selecting input
+    this.selectionStart = this.selectionEnd;
+}, false);
