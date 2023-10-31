@@ -15,9 +15,5 @@ Guess the Number is a simple game where the goal is to guess a random number bet
 
 You can play the game through the web application deployed [here](https://devbas-ed.github.io/Guess-the-number/).
 
-## Contribution
 
-This repository serves as a collaborative project for developers learning JavaScript. You can contribute to the game by adding features, improving the user interface, or enhancing the codebase. To get started, follow these steps:
-
-1. Fork this repository to your GitHub account.
 
