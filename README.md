@@ -21,5 +21,4 @@ This repository serves as a collaborative project for developers learning JavaSc
 
 1. Fork this repository to your GitHub account.
 2. Clone your forked repository to your local development environment.
-3. Make your desired changes or enhancements to the game.
 
