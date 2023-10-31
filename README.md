@@ -20,5 +20,4 @@ You can play the game through the web application deployed [here](https://devbas
 This repository serves as a collaborative project for developers learning JavaScript. You can contribute to the game by adding features, improving the user interface, or enhancing the codebase. To get started, follow these steps:
 
 1. Fork this repository to your GitHub account.
-2. Clone your forked repository to your local development environment.
 
